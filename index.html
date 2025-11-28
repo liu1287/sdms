@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="UTF-8">
+		<title>学生宿舍管理系统</title>
+		<link rel="stylesheet" href="./css/login.css" />
+	</head>
+	<body>
+		<div class="background-container">
+		  <img src="./img/背景.jpg" alt="学校建筑背景" class="background-image">
+		</div>
+		<div class="box">
+			<img class="logo" src="img/logo.png"/>
+			<h2>学生宿舍管理系统</h2>
+			<form id="form">
+				<input id="user" type="text" placeholder="请输入用户名" required>
+				<div class="pwd-box">
+					<input id="pwd" type="password" placeholder="请输入密码" required>
+					<span class="eye" id="eye">🙈</span>
+				</div>
+				<div class="role">
+					<label><input type="radio" name="role" value="student" checked> 学生</label>
+					<label><input type="radio" name="role" value="admin">管理员</label>
+				</div>
+				<button type="submit" class="login">登录</button>
+				<button type="reset" class="cancel">取消</button>
+			</form>
+		</div>
+
+		<script src="./js/login.js"></script>
+	</body>
+</html>
